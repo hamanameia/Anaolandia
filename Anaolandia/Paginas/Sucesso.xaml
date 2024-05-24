@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Anaolandia.Paginas.Sucesso"
+             NavigationPage.HasNavigationBar="False"
+             Title="Sucesso">
+    <ScrollView Margin="0" BackgroundColor="Brown">
+        <Grid BackgroundColor="Blue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid VerticalOptions="Start" Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Margin="0,0,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="4*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Column="0">
+                        <ImageButton Source="usu.svg" BackgroundColor="#ffffff" Clicked="Usuario_Clicked" MaximumWidthRequest="550" HeightRequest="100" Margin="0,0,0,-30"
+        VerticalOptions="Start">
+                        </ImageButton>
+
+                    </Grid>
+                    <Grid Column="1">
+                        <ImageButton Source="anoessucesso.svg" BackgroundColor="#ffffff" MaximumWidthRequest="550"  HeightRequest="100" Margin="-15,4,0,-10"
+            VerticalOptions="Start">
+                        </ImageButton>
+                    </Grid>
+                </Grid>
+
+                <Grid>
+                    <BoxView
+            BackgroundColor="#FF34A8"
+            VerticalOptions="End"
+            HeightRequest="2.5"/>   
+                </Grid>
+
+
+            </Grid>
+
+            <Grid Row="1" BackgroundColor="Green">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Row="0" BackgroundColor="Purple">
+                    <Image Source="mestre.svg"></Image>
+                </Grid>
+                <Grid Row="1">
+                    <Image Source="adam.svg" HorizontalOptions="FillAndExpand"></Image>
+                </Grid>
+                <Grid Row="2">
+                    <Image Source="anaodiplomatico.svg" MaximumHeightRequest="800" MaximumWidthRequest="800"></Image>
+                </Grid>
+                <Grid Row="3">
+                    <Image Source="zemiudo.svg" MaximumHeightRequest="800" MaximumWidthRequest="800"></Image>
+                </Grid>
+                <Grid Row="4">
+                    <Image Source="plutao.svg" MaximumHeightRequest="800" MaximumWidthRequest="800"></Image>
+                </Grid>
+                <Grid Row="5">
+                    <Image Source="willow.svg" MaximumHeightRequest="800" MaximumWidthRequest="800"></Image>
+                </Grid>
+                <Grid Row="6">
+                    <Image Source="muitomais.svg" MaximumHeightRequest="800" MaximumWidthRequest="800"></Image>
+                </Grid>
+
+            </Grid>
+
+            <Grid VerticalOptions="End" Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Column="0">
+                    <ImageButton Source="home.svg" BackgroundColor="#FF34A8" Clicked="Home_Clicked" MaximumWidthRequest="250" HeightRequest="110" 
+                VerticalOptions="End">
+                    </ImageButton>
+                </Grid>
+                <Grid Column="1">
+                    <ImageButton Source="sucesso.svg" BackgroundColor="#FF34A8" Clicked="Sucesso_Clicked" MaximumWidthRequest="250" HeightRequest="110"
+                    VerticalOptions="End">
+                    </ImageButton>
+                </Grid>
+                <Grid Column="2">
+                    <ImageButton Source="lojinha.svg" BackgroundColor="#FF34A8" Clicked="Lojinha_Clicked" MaximumWidthRequest="250" HeightRequest="110" 
+                VerticalOptions="End">
+                    </ImageButton>
+                </Grid>
+            </Grid>
+                
+
+            
+        </Grid>
+    </ScrollView>
+</ContentPage>

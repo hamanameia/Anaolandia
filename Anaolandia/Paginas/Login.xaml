@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Anaolandia.Paginas.Login"
+             NavigationPage.HasNavigationBar="False"
+             Title="Login">
+
+    <VerticalStackLayout VerticalOptions="Center" WidthRequest="320" >
+
+        <Image VerticalOptions="Center" WidthRequest="270" Source="login.png" />
+
+        <Image WidthRequest="100" Margin="0,10,0,1" HorizontalOptions="Start" Source="Resources/Images/LoginCadastroUsuario/nome.png" />
+
+        <Border Stroke="#FF34A8" StrokeThickness="2.5" Background="#FFFFFF" Padding="2">
+            <Entry x:Name="txtnome" FontFamily="MoreSugar" TextColor="#FF34A8" FontSize="20"></Entry> 
+        </Border>
+
+        <Image WidthRequest="100"  Margin="0,20,0,1" HorizontalOptions="Start" Source="Resources/Images/LoginCadastroUsuario/senha.png" />
+    
+        <Border Stroke="#FF34A8" StrokeThickness="2.5" Background="#FFFFFF" Padding="2">
+            <Entry x:Name="txtsenha" IsPassword="True" FontFamily="MoreSugar" FontSize="20"  TextColor="#FF34A8" ></Entry>
+        </Border>
+
+        <Image VerticalOptions="Center" WidthRequest="300" Margin="0,50,0,0"  Source="entrar.png" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer 
+                    Tapped="Entrar_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image WidthRequest="300" Margin="0,50,0,0" VerticalOptions="End" Source="naologin.png" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer 
+                    Tapped="naologin_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+    </VerticalStackLayout>
+
+
+
+
+
+</ContentPage>  
