@@ -5,6 +5,7 @@
              NavigationPage.HasNavigationBar="False"
              Title="Cadastro">
 
+    
     <VerticalStackLayout VerticalOptions="Center" WidthRequest="320" >
 
         <Image VerticalOptions="Center" WidthRequest="340" Source="cadastrar.png" />

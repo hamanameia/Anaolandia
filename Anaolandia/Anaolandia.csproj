@@ -43,7 +43,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg"/>
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FF34A8"  />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FF34A8" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -55,6 +55,8 @@
 		<MauiImage Include="Resources\Images\Home\*" />
 		<MauiImage Include="Resources\Images\Sucesso\*" />
 		<MauiImage Include="Resources\Images\Lojinha\*" />
+		<MauiImage Include="Resources\Images\Lojinha\Texto\*" />
+		<MauiImage Include="Resources\Images\Lojinha\Fotos\*" />
 		<MauiImage Include="Resources\Images\Usuario\*" />
 
 

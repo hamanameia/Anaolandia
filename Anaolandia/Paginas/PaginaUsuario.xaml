@@ -2,11 +2,99 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Anaolandia.Paginas.PaginaUsuario"
+             NavigationPage.HasNavigationBar="False"
              Title="PaginaUsuario">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView Margin="0">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid VerticalOptions="Start" Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Margin="0,0,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="4*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Column="0">
+                        <ImageButton Source="usu.svg" BackgroundColor="#ffffff" Clicked="Usuario_Clicked" MaximumWidthRequest="550" HeightRequest="100" Margin="0,0,0,-30"
+                        VerticalOptions="Start">
+                        </ImageButton>
+
+                    </Grid>
+                    <Grid Column="1">
+                        <ImageButton Source="anoessucesso.svg" BackgroundColor="#ffffff" MaximumWidthRequest="550"  HeightRequest="100" Margin="-15,4,0,-10"
+                        VerticalOptions="Start">
+                        </ImageButton>
+                    </Grid>
+                </Grid>
+
+                <Grid>
+                    <BoxView
+        BackgroundColor="#FF34A8"
+        VerticalOptions="End"
+        HeightRequest="2.5"/>
+                </Grid>
+
+
+            </Grid>
+
+            <Grid Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+              
+
+            </Grid>
+
+            <Grid VerticalOptions="End" Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Column="0">
+                    <ImageButton Source="home.svg" BackgroundColor="#FF34A8" Clicked="Home_Clicked" MaximumWidthRequest="250" HeightRequest="110" 
+            VerticalOptions="End">
+                    </ImageButton>
+                </Grid>
+                <Grid Column="1">
+                    <ImageButton Source="sucesso.svg" BackgroundColor="#FF34A8" Clicked="Sucesso_Clicked" MaximumWidthRequest="250" HeightRequest="110"
+                VerticalOptions="End">
+                    </ImageButton>
+                </Grid>
+                <Grid Column="2">
+                    <ImageButton Source="lojinha.svg" BackgroundColor="#FF34A8" Clicked="Lojinha_Clicked" MaximumWidthRequest="250" HeightRequest="110" 
+            VerticalOptions="End">
+                    </ImageButton>
+                </Grid>
+            </Grid>
+
+
+
+        </Grid>
+    </ScrollView>
 </ContentPage>

@@ -4,6 +4,7 @@
              x:Class="Anaolandia.Paginas.Sucesso"
              NavigationPage.HasNavigationBar="False"
              Title="Sucesso">
+    
     <ScrollView Margin="0">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -33,13 +34,13 @@
                     </Grid.RowDefinitions>
                     <Grid Column="0">
                         <ImageButton Source="usu.svg" BackgroundColor="#ffffff" Clicked="Usuario_Clicked" MaximumWidthRequest="550" HeightRequest="100" Margin="0,0,0,-30"
-        VerticalOptions="Start">
+                            VerticalOptions="Start">
                         </ImageButton>
 
                     </Grid>
                     <Grid Column="1">
                         <ImageButton Source="anoessucesso.svg" BackgroundColor="#ffffff" MaximumWidthRequest="550"  HeightRequest="100" Margin="-15,4,0,-10"
-            VerticalOptions="Start">
+                            VerticalOptions="Start">
                         </ImageButton>
                     </Grid>
                 </Grid>
@@ -69,25 +70,25 @@
                 </Grid.RowDefinitions>
 
                 <Grid Row="0">
-                    <Image Source="mestre.png"  MaximumWidthRequest="800"></Image>
+                    <Image Source="mestre.png"></Image>
                 </Grid>
                 <Grid Row="1">
-                    <Image Source="adam.svg"></Image>
+                    <Image Source="adam.png"></Image>
                 </Grid>
                 <Grid Row="2">
-                    <Image Source="anaodiplomatico.svg"></Image>    
+                    <Image Source="anaodiplomatico.png"></Image>
                 </Grid>
                 <Grid Row="3">
-                    <Image Source="zemiudo.svg"></Image>
+                    <Image Source="zemiudo.png"/>
                 </Grid>
                 <Grid Row="4">
-                    <Image Source="plutao.svg"></Image>
+                    <Image Source="plutao.png"></Image>
                 </Grid>
                 <Grid Row="5">
-                    <Image Source="willow.svg"></Image>
+                    <Image Source="willow.png"></Image>
                 </Grid>
                 <Grid Row="6">
-                    <Image Source="muitomais.svg"></Image>
+                    <Image Source="muitomais.png" Margin="25"></Image>
                 </Grid>
 
             </Grid>
