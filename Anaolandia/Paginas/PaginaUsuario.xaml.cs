@@ -1,11 +1,17 @@
+using Anaolandia.Model;
+
 namespace Anaolandia.Paginas;
 
 public partial class PaginaUsuario : ContentPage
 {
-	public PaginaUsuario()
+    private Usuario _usuario;
+
+    public PaginaUsuario()
 	{
 		InitializeComponent();
-	}
+
+        _usuario = App.Usuario;
+    }
     private async void Home_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new Home());

@@ -3,7 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Anaolandia.Paginas.Lojinha"
              NavigationPage.HasNavigationBar="False"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolKit.Maui"
              Title="Lojinha">
+
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#FF34A8" StatusBarStyle="Default"/>
+    </Page.Behaviors>
 
     <ScrollView Margin="0">
         <Grid>
