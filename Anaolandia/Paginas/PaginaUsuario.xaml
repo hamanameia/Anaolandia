@@ -10,7 +10,7 @@
         <mct:StatusBarBehavior StatusBarColor="#FF34A8" StatusBarStyle="Default"/>
     </Page.Behaviors>
     <ScrollView Margin="0">
-        <Grid>
+        <Grid Margin="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
@@ -66,6 +66,8 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
 
                 <Grid Row="0" VerticalOptions="Start" Margin="20,0,80,0">
@@ -78,11 +80,11 @@
                     </Grid.RowDefinitions>
 
                     <Grid Row="0" >
-                        <Image VerticalOptions="End" WidthRequest="100" Margin="0,10,0,1" HorizontalOptions="Start" Source="Resources/Images/LoginCadastroUsuario/nome.png" />
+                        <Image VerticalOptions="End" WidthRequest="100" Margin="0,10,0,3" HorizontalOptions="Start" Source="Resources/Images/LoginCadastroUsuario/nome.png" />
 
                     </Grid>
                     <Grid Row="1">
-                        <Border Stroke="#FF34A8" StrokeThickness="2.5" Background="#FFFFFF" >
+                        <Border Stroke="#FF34A8" StrokeThickness="1.5" Background="#FFFFFF" >
                             <Label Text="{Binding Nome}" FontFamily="MoreSugar" TextColor="#FF34A8" FontSize="20"></Label>
                         </Border>
                     </Grid>
@@ -90,7 +92,7 @@
 
                 </Grid>
 
-                <Grid Row="1" VerticalOptions="Start" Margin="20,0,80,0">
+                <Grid Row="1" VerticalOptions="Start" Margin="20,0,80,20">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
@@ -100,17 +102,109 @@
                     </Grid.RowDefinitions>
 
                     <Grid Row="0">
-                        <Image WidthRequest="100"  Margin="0,20,0,1" HorizontalOptions="Start" Source="Resources/Images/Usuario/cartaousuario.png" />
+                        <Image WidthRequest="100"  Margin="0,20,0,3" HorizontalOptions="Start" Source="Resources/Images/Usuario/cartaousuario.png" />
                     </Grid>
                     <Grid Row="1">
-                        <Border Stroke="#FF34A8" StrokeThickness="2.5" Background="#FFFFFF">
+                        <Border Stroke="#FF34A8" StrokeThickness="1.5" Background="#FFFFFF">
                             <Label Text="{Binding Cartao}" FontFamily="MoreSugar" FontSize="20"  TextColor="#FF34A8" ></Label>
                         </Border>
                     </Grid>
 
 
-                </Grid>    
-                
+                </Grid>
+
+                <Grid Row="2" MinimumHeightRequest="300">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="5*"></RowDefinition>
+                        
+                    </Grid.RowDefinitions>
+
+                    <Grid Row="0">
+                        <Image Source="carrinhotexto.png" HorizontalOptions="Center" MaximumWidthRequest="180" />
+                    </Grid>
+
+                    <Grid Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Row="0">
+                            <Image Source="anaocomumcarrinho.png" HorizontalOptions="Center" MaximumWidthRequest="300" Margin="0,5" />
+
+                        </Grid>
+                        <Grid Row="1">
+                            <Image Source="anaocomumcarrinho.png" HorizontalOptions="Center" MaximumWidthRequest="300" Margin="0,5" />
+                        </Grid>
+                        <Grid Row="2">
+                            <Image Source="anaocomumcarrinho.png" HorizontalOptions="Center" MaximumWidthRequest="300" Margin="0,5" />
+                        </Grid>
+                        <Grid Row="3">
+                            <Image Source="anaoturbinadocarrinho.png" HorizontalOptions="Center" MaximumWidthRequest="300" Margin="0,5" />
+
+                        </Grid>
+                        <Grid Row="4">
+                            <Image Source="anaoturbinadocarrinho.png" HorizontalOptions="Center" MaximumWidthRequest="300" Margin="0,5" />
+
+                        </Grid>
+
+                    </Grid>
+
+
+
+
+                </Grid>
+
+                <Grid Row="3" Margin="20,0,0,20" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+
+                    <Grid Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Grid Row="0">
+                            <Image Source="local.png" VerticalOptions="End" Margin="0,0,25,0" />
+                        </Grid>
+                        
+                        <Grid Row="1">
+                            <Border Stroke="#FF34A8" StrokeThickness="2" Background="#FFFFFF" VerticalOptions="End" MaximumHeightRequest="45">
+                                <Entry FontFamily="MoreSugar"   TextColor="#FF34A8" ></Entry>
+                            </Border>
+                        </Grid>
+
+
+
+
+                    </Grid>
+                    
+                    <Grid Column="1">
+                        <Image Source="comprar.png" VerticalOptions="Center" Margin="5,15,3,0" />
+
+                    </Grid>
+                    
+                    
+                </Grid>
 
 
 

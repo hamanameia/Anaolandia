@@ -11,6 +11,8 @@ public partial class PaginaUsuario : ContentPage
 		InitializeComponent();
 
         _usuario = App.Usuario;
+
+        this.BindingContext = _usuario;
     }
     private async void Home_Clicked(object sender, EventArgs e)
     {
